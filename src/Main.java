@@ -64,23 +64,108 @@ public class Main {
         // boolean pregunta = edad > 18;
         // boolean pregunta = (2 + 2) == 4;
 
-        if (pregunta){
+        if (pregunta) {
             System.out.println(nombre + " es Fili");
         } else {
             System.out.println(nombre + " es distinto de Fili");
         }
 
+        String colorFavorito = "Rosa";
+
+        switch (colorFavorito) {
+            case "Rojo":
+                System.out.println("Esta seccion se ejcuta cuando el color favorito es el Rojo");
+                break;
+            case "Rosa":
+                System.out.println("Esta seccion se ejcuta cuando el color favorito es el Rosa");
+                break;
+            case "Verde":
+                System.out.println("Esta seccion se ejcuta cuando el color favorito es el Verde");
+                break;
+            default:
+                break;
+        }
+
+        if (colorFavorito.equals("Rosa")) {
+            System.out.println("Si es el color favorito de pepe");
+        } else {
+            if (colorFavorito.equals("Rojo")) {
+                System.out.println("Si es el color segundo favorito de pepe");
+            } else {
+                if (colorFavorito.equals("Verde")) {
+                    System.out.println("Si es el color tercero favorito de pepe");
+                } else {
+                    System.out.println("No es el el tercero color favorito de pepe");
+                }
+            }
+        }
+
+        if (colorFavorito.equals("Rosa")) {
+            System.out.println("Si es el color favorito de pepe");
+        } else if (colorFavorito.equals("Rojo")) {
+            System.out.println("Si es el color segundo favorito de pepe");
+        } else if (colorFavorito.equals("Verde")) {
+            System.out.println("Si es el color tercero favorito de pepe");
+        } else {
+            System.out.println("No es el el tercero color favorito de pepe");
+        }
+
+//        switch (true) {
+//            case (colorFavorito.equals("Rojo")):
+//                break;
+//            case (colorFavorito.equals("Rosa")):
+//                break;
+//            case (colorFavorito.equals("Verde")):
+//                break;
+//            default:
+//                break;
+//        }
+
+        // ejercicio chafa y dicifil+
+        System.out.println("hola usuario");
+        System.out.println("ingresa opcion");
+        int opcion =6;
+
+        switch (opcion) {
+            case 1:
+                System.out.println("consultar saldo");
+                break;
+            case 2:
+                System.out.println("retiro de efectivo");
+                break;
+            case 3:
+                System.out.println("deposito");
+                break;
+
+                default:
+                System.out.println("recarga telefonica");
+                break;
+        }
 
 
+        System.out.println("Hola Usuario");
+        System.out.println("ingresa coordenada");
+        String coordenada = "5D";
+        switch (coordenada){
+            case "1D":
+            case "1A":
+                System.out.println("barritas");
+                System.out.println("devolviendo de cambio $" + (2+2) + " MXN");
+                break;
+            case "2D":
+                System.out.println("donitas bimbo");
+                break;
+            case "3D":
+                System.out.println("galletas principe");
+                break;
+
+            default:
+                System.out.println("pancito");
+                System.out.println("coca");
+                break;
 
 
-
-
-
-
-
-
-
-
+        }
     }
+
 }
