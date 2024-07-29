@@ -1,7 +1,10 @@
+import java.util.Arrays;
+import java.util.List;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
+    public static <create> void main(String[] args) {
 
         /////////////////////////////////
         // TIPOS DE DATOS EN JAVA
@@ -136,12 +139,10 @@ public class Main {
             case 3:
                 System.out.println("deposito");
                 break;
-
-                default:
+            default:
                 System.out.println("recarga telefonica");
                 break;
         }
-
 
         System.out.println("Hola Usuario");
         System.out.println("ingresa coordenada");
@@ -166,6 +167,32 @@ public class Main {
 
 
         }
+
+        for (int i=10; i > 0; i--) {
+            System.out.println(i);
+        }
+
+        List<String> menu = Arrays.asList("Todo", "Musica", "Lista de repoduccion");
+
+        for (String itemMenu: menu) {
+            System.out.println(itemMenu);
+        }
+
+        int contador = 0;
+        while (contador < 10 ) {
+            System.out.println(contador);
+            contador = contador + 1;
+        }
+
+        int numeroDeTabla;
+        for (int i = 1; i<=10; i++){
+            numeroDeTabla = i;
+            for (int indice = 1; indice <= 10; indice++) {
+                System.out.println(numeroDeTabla + "x" + indice + "=" + indice * numeroDeTabla);
+            }
+        }
+
     }
+
 
 }
